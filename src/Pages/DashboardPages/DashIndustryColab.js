@@ -27,7 +27,7 @@ const DashIndustryColab = () => {
   const [getdata, setgetdata] = useState(0);
 
   useEffect(() => {
-    fetch("http://34.125.182.92/api/industry-colaborations")
+    fetch("http://http://34.131.12.7/api/industry-colaborations")
       .then((response) => response.json())
       .then((data) => setIndustryCollaborations(data))
       .catch((error) => console.error(error));
@@ -51,7 +51,7 @@ const DashIndustryColab = () => {
     formData.append("description", description);
     formData.append("image", image);
 
-    fetch("http://34.125.182.92/api/industry-colaborations", {
+    fetch("http://http://34.131.12.7/api/industry-colaborations", {
       method: "POST",
       body: formData,
     })
@@ -67,7 +67,7 @@ const DashIndustryColab = () => {
   };
 
   const handleDeleteIndustryCollaboration = (title) => {
-    fetch("http://34.125.182.92/api/industry-colaborations", {
+    fetch("http://http://34.131.12.7/api/industry-colaborations", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -151,7 +151,7 @@ if(localStorage.getItem("loggedin") === "true"){
                     className="text-center"
                     sx={{ width: "150px", mt: "15px", ml: "10px" }}
                     component="img"
-                    image={`http://34.125.182.92${industryCollaboration.image.path}`}
+                    image={`http://http://34.131.12.7${industryCollaboration.image.path}`}
                     alt={industryCollaboration.title}
                   />
                 )}

@@ -29,7 +29,7 @@ const FacultyPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://34.125.182.92/api/faculty/getfaculty")
+    fetch("http://http://34.131.12.7/api/faculty/getfaculty")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -108,7 +108,7 @@ const FacultyPage = () => {
                           height="350"
                           className=" align-content-center w-100"
                           image={
-                            "http://34.125.182.92" + facultyMember.image.path
+                            "http://http://34.131.12.7" + facultyMember.image.path
                           }
                           alt={facultyMember.name + " Image"}
                         />
