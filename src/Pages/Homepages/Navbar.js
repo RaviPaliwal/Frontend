@@ -96,7 +96,7 @@ const Navbar = () => {
                     target="_blank"
                     className={`cnav-link nav-link text-center`}
                     aria-current="page"
-                    to="http://http://34.131.12.7/pdfs/TimeTable.pdf"
+                    to="http://34.131.12.7/pdfs/TimeTable.pdf"
                   >
                     <Watch className="me-2" />
                     Time Table
@@ -109,7 +109,7 @@ const Navbar = () => {
                     style={{fontSize:"10px"}}
                     className={`cnav-link nav-link text-center `}
                     aria-current="page"
-                    to="http://http://34.131.12.7/pdfs/AcademicCalendar.pdf"
+                    to="http://34.131.12.7/pdfs/AcademicCalendar.pdf"
                   >
                     <CalendarMonth className="me-1 row ps-1" />
                     Academic Calendar

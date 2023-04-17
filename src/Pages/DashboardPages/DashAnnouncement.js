@@ -25,7 +25,7 @@ const DashAnnouncement = () => {
     };
 
     let response = await fetch(
-      "http://http://34.131.12.7/api/announcement/getall",
+      "http://34.131.12.7/api/announcement/getall",
       {
         method: "GET",
         headers: headersList,
@@ -53,7 +53,7 @@ const DashAnnouncement = () => {
         info: info,
       });
       setloaderprop(true);
-      let response = await fetch("http://http://34.131.12.7/api/announcement/add", {
+      let response = await fetch("http://34.131.12.7/api/announcement/add", {
         method: "POST",
         body: bodyContent,
         headers: headersList,

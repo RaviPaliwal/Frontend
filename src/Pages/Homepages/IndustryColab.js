@@ -5,7 +5,7 @@ const IndustryColab = () => {
 
   useEffect(() => {
     const fetchIndustryCollaborations = async () => {
-      const response = await fetch('http://http://34.131.12.7/api/industry-colaborations');
+      const response = await fetch('http://34.131.12.7/api/industry-colaborations');
       const data = await response.json();
       setIndustryCollaborations(data);
     };
@@ -47,7 +47,7 @@ const IndustryColab = () => {
               }}
             >
               <img
-                src={`http://http://34.131.12.7`+industryCollaboration.image.path}
+                src={`http://34.131.12.7`+industryCollaboration.image.path}
                 alt={industryCollaboration.title}
                 style={{ marginBottom: '1.2rem', width: '150px' }}
               />

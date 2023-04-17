@@ -43,7 +43,7 @@ username: "None",
 email: email,
 password: password,
 });
-let response = await fetch("http://http://34.131.12.7/auth/login", {
+let response = await fetch("http://34.131.12.7/auth/login", {
 method: "POST",
 body: bodyContent,
 headers: headersList,

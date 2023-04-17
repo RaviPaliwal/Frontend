@@ -46,7 +46,7 @@ const DeleteAnnouncement = ({Ann,setAnn}) => {
             title: stitle,
           });
           setloaderprop(true)
-          const response = await fetch("http://http://34.131.12.7/api/announcement/deletebytitle", { 
+          const response = await fetch("http://34.131.12.7/api/announcement/deletebytitle", { 
             method: "POST",
             headers: headersList,
             body:bodyContent
