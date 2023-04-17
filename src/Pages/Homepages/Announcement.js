@@ -15,7 +15,7 @@ const Announcement = () => {
         "Content-Type": "application/json"
        }
        
-       let response = await fetch("http://127.0.0.1:5000/api/announcement/getall", { 
+       let response = await fetch("http://34.131.12.7/api/announcement/getall", { 
          method: "GET",
          headers: headersList
        });

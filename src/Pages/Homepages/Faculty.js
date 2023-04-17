@@ -25,7 +25,7 @@ import { useNavigate } from "react-router-dom";
 const FacultyPage = () => {
   const [faculty, setFaculty] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const numCards = 3; // Number of cards to display at once
+  const numCards = 1; // Number of cards to display at once
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
@@ -133,54 +133,64 @@ const FacultyPage = () => {
                           >
                             {facultyMember.about}
                           </Typography>
-                          <Box sx={{ mt: 1 }} className="text-center" display="flex" justifyContent="center">
-  <Box>
-    {facultyMember.sociallinks[0].linkedin && (
-      <SocialLink
-        link={facultyMember.sociallinks[0].linkedin}
-        icon={<LinkedIn className="linkedin" />}
-      />
-    )}
-    {facultyMember.sociallinks[0].gmail && (
-      <SocialLink
-        link={`mailto:${facultyMember.sociallinks[0].gmail}`}
-        icon={<MailOutline className="text-success" />}
-      />
-    )}
-    {facultyMember.sociallinks[0].facebook && (
-      <SocialLink
-        link={facultyMember.sociallinks[0].facebook}
-        icon={<Facebook className="facebook" />}
-      />
-    )}
-    {facultyMember.sociallinks[0].twitter && (
-      <SocialLink
-        link={facultyMember.sociallinks[0].twitter}
-        icon={<Twitter className="facebook" />}
-      />
-    )}
-    {facultyMember.sociallinks[0].vidvan && (
-      <SocialLink
-        link={facultyMember.sociallinks[0].vidvan}
-        icon={<EmojiObjects style={{ color: "#0c3e52" }} />}
-      />
-    )}
-    {facultyMember.sociallinks[0].instagram && (
-      <SocialLink
-        link={facultyMember.sociallinks[0].instagram}
-        icon={<Instagram className="instagram" />}
-      />
-    )}
-  </Box>
-  <Typography
-    variant="body2"
-    color="textSecondary"
-    component="div"
-  >
-    {facultyMember.sociallinks[0].email}
-  </Typography>
-</Box>
-
+                          <Box
+                            sx={{ mt: 1 }}
+                            className="text-center"
+                            display="flex"
+                            justifyContent="center"
+                          >
+                            <Box>
+                              {facultyMember.sociallinks[0].linkedin && (
+                                <SocialLink
+                                  link={facultyMember.sociallinks[0].linkedin}
+                                  icon={<LinkedIn className="linkedin" />}
+                                />
+                              )}
+                              {facultyMember.sociallinks[0].gmail && (
+                                <SocialLink
+                                  link={`mailto:${facultyMember.sociallinks[0].gmail}`}
+                                  icon={
+                                    <MailOutline className="text-success" />
+                                  }
+                                />
+                              )}
+                              {facultyMember.sociallinks[0].facebook && (
+                                <SocialLink
+                                  link={facultyMember.sociallinks[0].facebook}
+                                  icon={<Facebook className="facebook" />}
+                                />
+                              )}
+                              {facultyMember.sociallinks[0].twitter && (
+                                <SocialLink
+                                  link={facultyMember.sociallinks[0].twitter}
+                                  icon={<Twitter className="facebook" />}
+                                />
+                              )}
+                              {facultyMember.sociallinks[0].vidvan && (
+                                <SocialLink
+                                  link={facultyMember.sociallinks[0].vidvan}
+                                  icon={
+                                    <EmojiObjects
+                                      style={{ color: "#0c3e52" }}
+                                    />
+                                  }
+                                />
+                              )}
+                              {facultyMember.sociallinks[0].instagram && (
+                                <SocialLink
+                                  link={facultyMember.sociallinks[0].instagram}
+                                  icon={<Instagram className="instagram" />}
+                                />
+                              )}
+                            </Box>
+                            <Typography
+                              variant="body2"
+                              color="textSecondary"
+                              component="div"
+                            >
+                              {facultyMember.sociallinks[0].email}
+                            </Typography>
+                          </Box>
                         </CardContent>
                       </Card>
                     </Grid>
